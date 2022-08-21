@@ -1,0 +1,17 @@
+C:\Users\jfirm\Documents\HelpSystem\Business\bin\Debug\banco.mdf
+C:\Users\jfirm\Documents\HelpSystem\Business\bin\Debug\banco_log.ldf
+C:\Users\jfirm\Documents\HelpSystem\Business\bin\Debug\Business.dll.config
+C:\Users\jfirm\Documents\HelpSystem\Business\bin\Debug\Business.dll
+C:\Users\jfirm\Documents\HelpSystem\Business\bin\Debug\Business.pdb
+C:\Users\jfirm\Documents\HelpSystem\Business\bin\Debug\Data.dll
+C:\Users\jfirm\Documents\HelpSystem\Business\bin\Debug\EntityFramework.dll
+C:\Users\jfirm\Documents\HelpSystem\Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jfirm\Documents\HelpSystem\Business\bin\Debug\Data.pdb
+C:\Users\jfirm\Documents\HelpSystem\Business\bin\Debug\Data.dll.config
+C:\Users\jfirm\Documents\HelpSystem\Business\bin\Debug\EntityFramework.xml
+C:\Users\jfirm\Documents\HelpSystem\Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jfirm\Documents\HelpSystem\Business\obj\Debug\Business.csprojAssemblyReference.cache
+C:\Users\jfirm\Documents\HelpSystem\Business\obj\Debug\Business.csproj.CoreCompileInputs.cache
+C:\Users\jfirm\Documents\HelpSystem\Business\obj\Debug\Business.csproj.CopyComplete
+C:\Users\jfirm\Documents\HelpSystem\Business\obj\Debug\Business.dll
+C:\Users\jfirm\Documents\HelpSystem\Business\obj\Debug\Business.pdb

@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Data.Entity.Funcionario>
+
+
+<div class="table-responsive" style="margin-top:50px;">
+    <table class="table table-bordered table-light">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Pergunta</th>
+                <th>Resposta</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                if ((bool)item.Respondido)
+                {
+                    <tr>
+                        <td>@item.Nome</td>
+                        <td>@item.Email</td>
+                        <td>@item.Pergunta</td>
+                        <td>@item.Resposta</td>
+                    </tr>
+                }
+
+            }
+        </tbody>
+    </table>
+</div>
+<script src="~/Scripts/HelpSystem/CadastroHelpSystem.js"></script>
+

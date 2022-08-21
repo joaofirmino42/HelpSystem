@@ -1,0 +1,121 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Help System! Login</title>
+    <link href="~/vendors/ti-icons/css/themify-icons.css" rel="stylesheet" />
+    <link href="~/Content/Template/style.css" rel="stylesheet" />
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery.maskedinput.js"></script>
+    <script src="~/Scripts/WaitScript.js"></script>
+    <script src="~/Scripts/toastr.min.js"></script>
+    <script src="~/Scripts/Template/off-canvas.js"></script>
+    <script src="~/Scripts/Template/hoverable-collapse.js"></script>
+    <script src="~/Scripts/Template/template.js"></script>
+    <script src="~/Scripts/Template/todolist.js"></script>
+    <script src="~/Scripts/Template/dashboard.js"></script>
+
+    <link rel="shortcut icon" href="../../images/favicon.png" />
+</head>
+
+<body>
+    <div class="container-scroller">
+        <div class="container-fluid page-body-wrapper full-page-wrapper">
+            <div class="content-wrapper d-flex align-items-stretch auth auth-img-bg">
+                <div class="row flex-grow">
+                    <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                        <div class="auth-form-transparent text-left p-3">
+                            <div class="brand-logo">
+                                <img src="~/images/icone.png" style="width:80px;height:80px; margin-bottom:10px;" />
+                                @*<img src="../../images/logo.svg" alt="logo">*@
+                            </div>
+                            <h4>Bem vindo!</h4>
+                            @*<h6 class="font-weight-light">Help System!</h6>*@
+
+                            @if (ViewBag.message != null)
+                            {
+                                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                    <strong>Houve um erro!</strong> @ViewBag.message
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            }
+
+                            <form class="pt-3" method="post" action="@Url.Action("Logar","Login")">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail" style="font-size:medium;">Email</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend bg-transparent">
+                                            <span class="input-group-text bg-transparent border-right-0">
+                                                <i class="ti-user text-primary"></i>
+                                            </span>
+                                        </div>
+                                        <input type="email" class="form-control form-control-lg border-left-0" id="exampleInputEmail" name="Email" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword" style="font-size:medium;">Senha</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend bg-transparent">
+                                            <span class="input-group-text bg-transparent border-right-0">
+                                                <i class="ti-lock text-primary"></i>
+                                            </span>
+                                        </div>
+                                        <input type="password" class="form-control form-control-lg border-left-0" id="exampleInputPassword" name="Senha" placeholder="Senha" required>
+                                    </div>
+                                </div>
+                                <div class="my-2 d-flex justify-content-between align-items-center">
+                                    @*<div class="form-check">
+                                            <label class="form-check-label text-muted">
+                                                <input type="checkbox" class="form-check-input">
+                                                Keep me signed in
+                                            </label>
+                                        </div>*@
+                                    @*<a href="#" class="auth-link text-black">Perdeu a senha?</a>*@
+                                </div>
+                                <div class="my-3">
+                                    <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">ENTRAR</button>
+                                </div>
+                                @*<div class="mb-2 d-flex">
+                                        <button type="button" class="btn btn-facebook auth-form-btn flex-grow mr-1">
+                                            <i class="ti-facebook mr-2"></i>Facebook
+                                        </button>
+                                        <button type="button" class="btn btn-google auth-form-btn flex-grow ml-1">
+                                            <i class="ti-google mr-2"></i>Google
+                                        </button>
+                                    </div>*@
+                                <div class="text-center mt-4 font-weight-light">
+                                    Não tem conta? @*<a href="register-2.html" class="text-primary">Criar</a>*@
+                                    <a href="@Url.Action("CadastraUsuario","Login")" class="text-primary">Criar</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 login-half-bg d-flex flex-row">
+                        <p class="text-white font-weight-medium text-center flex-grow align-self-end">Copyright &copy; 2022  All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- content-wrapper ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+</body>
+
+</html>

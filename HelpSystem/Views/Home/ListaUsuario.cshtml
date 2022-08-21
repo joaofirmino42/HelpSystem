@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "ListaUsuario";
+    Layout = "~/Views/shared/Template.cshtml";
+}
+
+<section id="TabelUsuario" class="container">
+    <br />
+    <header style="margin-top:10px;">
+        <h2 class="text-secondary" style="font-size:medium;">
+            Lista de Usuários
+            <a class="btn btn-primary btn-sm fa-pull-right" href="@Url.Action("Index","Home")" style="transform:translate(0,-10px);">
+                Página Inicial
+            </a>
+        </h2>
+    </header>
+    <br />
+    <hr />
+    <div id="LstUsuario">
+        @Html.Partial("LstUsuario", ViewData["LstUsuario"])
+    </div>
+</section>
+<script src="~/Scripts/HelpSystem/CadastroHelpSystem.js"></script>
+

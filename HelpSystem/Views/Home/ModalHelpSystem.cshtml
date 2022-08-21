@@ -1,0 +1,46 @@
+﻿@model Data.Entity.Funcionario
+<section class="container">
+    <form role="form" method="post" action="javascript:func()" id="form-cadastro">
+        <input type="hidden" id="hdId" value="@Model.IdFuncionario" name="id" />
+        <input type="hidden" value="@Model.Raking" id="Ranking" />
+        <div class="row">
+            <div class="col-md-4">
+                <label for="txtNome">Nome</label>
+                <input type="text" readonly class="form-control" value="@Model.Nome" name="Nome" id="txtNome" />
+            </div>
+            <div class="col-md-4">
+                <label for="txtEmail">email</label>
+                <input type="email" readonly class="form-control" placeholder="digite seu email" value="@Model.Email" name="Email" id="txtEmail" />
+            </div>
+            <div class="col-md-3">
+                <label for="txtRanking">Ranking</label>
+                <input type="text" readonly class="form-control" value="@Model.Raking" name="Ranking" id="txtRanking" />
+            </div>
+
+        </div>
+
+        <br />
+        <div class="row">
+            <div class="col-md-12">
+                <label for="txtDescricao">
+                    Pergunta <span style="color:red;">*</span>
+                </label>
+                <textarea readonly name="Pergunta" class="form-control" id="txtDescricao" rows="6" cols="80">@Model.Pergunta</textarea>
+            </div>
+        </div>
+
+        <br />
+        <div class="row">
+            <div class="col-md-12">
+                <label for="txtResposta">
+                    Resposta <span style="color:red;">*</span>
+                </label>
+                <textarea name="Resposta" class="form-control" id="txtResposta" rows="6" cols="80">@Model.Resposta</textarea>
+            </div>
+        </div>
+
+        <br />
+        @*<button type="submit" id="btnCadastraPergunta" class="btn btn-primary btn-sm">Salvar</button>*@
+    </form>
+</section>
+<script type="text/javascript" src="~/Scripts/HelpSystem/CadastroHelpSystem.js"></script>

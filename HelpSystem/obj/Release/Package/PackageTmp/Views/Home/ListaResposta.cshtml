@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "ListaResposta";
+    Layout = "~/Views/shared/Template.cshtml";
+}
+
+<section id="tabelaResposta" class="container">
+    <br />
+    <header style="margin-top:10px;">
+        <h2 class="text-secondary" style="font-size:medium;">
+            Lista de Respostas
+            <a class="btn btn-primary btn-sm fa-pull-right" href="@Url.Action("Cadastro","Home")" style="transform:translate(0,-10px);">
+                Adicionar
+            </a>
+        </h2>
+    </header>
+    <br />
+    <hr />
+    <div id="LstResposta">
+        @Html.Partial("LstResposta", ViewData["Lstresposta"])
+
+    </div>
+</section>
+<script src="~/Scripts/HelpSystem/CadastroHelpSystem.js"></script>
+

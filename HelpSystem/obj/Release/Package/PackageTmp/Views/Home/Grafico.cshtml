@@ -1,0 +1,110 @@
+﻿
+@{
+    ViewBag.Title = "Grafico";
+    Layout = "~/Views/shared/Template.cshtml";
+}
+
+<section class="container" style="margin-top:20px;">
+    <br />
+    <header style="margin-top:10px;">
+        <h2 class="text-secondary" style="font-size:medium">
+            Gráfico
+            <a class="btn btn-primary btn-sm fa-pull-right" href="@Url.Action("Index","Home")" style="transform:translate(0,-10px);">
+                Página Inicial
+            </a>
+        </h2>
+    </header>
+    <br />
+    <hr />
+    <div id="grafico"></div>
+</section>
+<script type="text/javascript">
+
+
+    $(function () {
+
+        toastr.options = {
+            "closeButton": true,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": true,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": true,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        };
+
+    });
+    $(document).ready(function () {
+        montaGrafico();
+        //    //gerando os dados gráfico
+        //    var dadosGrafico = [];
+        //    dadosGrafico.push({ name: "Perguntas", data: 200 });
+        //    dadosGrafico.push({ name: "Respostas", data: 300 });
+
+        //    //        //configurando o eixo y do gráfico
+        //    $.each(dadosGrafico, function (i, point) {
+        //        point.y = point.data;
+        //    });
+        //    $("#grafico").highcharts({
+        //        chart: { type: "pie" },
+        //        title: { text: "Ranking" },
+        //        series: [{ data: dadosGrafico }]
+        //    });
+        //});
+    });
+    function montaGrafico() {
+        $.ajax({
+            type: "POST",
+            url: "../../../../Home/MontaGrafico",
+            async: true,
+            data: {},
+            success: function (d) {
+                //var dadosGrafico = [];
+                //console.log(d.lista);
+                //d.lista.forEach(element => {
+                //    dadosGrafico.push({ name: element.Nome, data: element.Ranking });
+                //});
+                //console.log(dadosGrafico);
+
+                //$.each(dadosGrafico, function (i, point) {
+                //    point.y = point.data;
+                //});
+                //$("#grafico").highcharts({
+                //    chart: { type: "pie" },
+                //    title: { text: "Ranking" },
+                //    series: [{ data: dadosGrafico }]
+                //});
+                //d.lista.push({ name: "Perguntas", data: 200 });
+                //$.each(d.lista, function (i, point) {
+                //    point.y = point.data;
+                //});
+            },
+            error: function (xhr) {
+                toastr["error"](xhr.responseText)
+            }
+        })
+        //gerando os dados gráfico
+        var dadosGrafico = [];
+        dadosGrafico.push({ name: "Perguntas", data: 200 });
+        dadosGrafico.push({ name: "Respostas", data: 300 });
+
+        //        //configurando o eixo y do gráfico
+        $.each(dadosGrafico, function (i, point) {
+            point.y = point.data;
+        });
+        $("#grafico").highcharts({
+            chart: { type: "pie" },
+            title: { text: "Ranking" },
+            series: [{ data: dadosGrafico }]
+        });
+
+    }
+</script>

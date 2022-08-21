@@ -1,0 +1,17 @@
+C:\Users\jfirm\Documents\HelpSystem\Business\bin\Release\banco.mdf
+C:\Users\jfirm\Documents\HelpSystem\Business\bin\Release\banco_log.ldf
+C:\Users\jfirm\Documents\HelpSystem\Business\bin\Release\Business.dll.config
+C:\Users\jfirm\Documents\HelpSystem\Business\bin\Release\Business.dll
+C:\Users\jfirm\Documents\HelpSystem\Business\bin\Release\Business.pdb
+C:\Users\jfirm\Documents\HelpSystem\Business\bin\Release\Data.dll
+C:\Users\jfirm\Documents\HelpSystem\Business\bin\Release\EntityFramework.dll
+C:\Users\jfirm\Documents\HelpSystem\Business\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\jfirm\Documents\HelpSystem\Business\bin\Release\Data.pdb
+C:\Users\jfirm\Documents\HelpSystem\Business\bin\Release\Data.dll.config
+C:\Users\jfirm\Documents\HelpSystem\Business\bin\Release\EntityFramework.xml
+C:\Users\jfirm\Documents\HelpSystem\Business\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\jfirm\Documents\HelpSystem\Business\obj\Release\Business.csprojAssemblyReference.cache
+C:\Users\jfirm\Documents\HelpSystem\Business\obj\Release\Business.csproj.CoreCompileInputs.cache
+C:\Users\jfirm\Documents\HelpSystem\Business\obj\Release\Business.csproj.CopyComplete
+C:\Users\jfirm\Documents\HelpSystem\Business\obj\Release\Business.dll
+C:\Users\jfirm\Documents\HelpSystem\Business\obj\Release\Business.pdb

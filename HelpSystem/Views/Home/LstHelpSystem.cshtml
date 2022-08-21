@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Data.Entity.Funcionario>
+
+<div class="table-responsive" style="margin-top:50px;">
+
+    <table class="table table-bordered table-light">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Pergunta</th>
+                <th>Editar</th>
+                @*<th>Excluir</th>*@
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+
+                if (!(bool)item.Respondido)
+                {
+
+
+                    <tr>
+                        <td>@item.Nome</td>
+                        <td>@item.Email</td>
+                        <td>@item.Pergunta</td>
+                        <td class="actions">
+
+                            <button class="btn btn-primary btn-sm " onclick="editar(@item.IdFuncionario)" title="Editar">Abrir Modal@*<i class="ti-pencil-alt text-primary"></i>*@</button>
+
+                            @*<a href="@Url.Action("Index","Home",new { id= item.IdFuncionario})" class class="btn btn-link" title="Editar"><i class="ti-pencil-alt text-primary"></i></a>*@
+                        </td>
+                       
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+<div class="modal" id="modalHelpSystem" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Help System</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="divHelpSystem"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" onclick="Atualizar()" id="btnAtualizar" class="btn btn-primary">Salvar Resposta</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="~/Scripts/HelpSystem/CadastroHelpSystem.js"></script>
+

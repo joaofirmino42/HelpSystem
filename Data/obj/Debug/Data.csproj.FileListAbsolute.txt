@@ -1,0 +1,14 @@
+C:\Users\jfirm\Documents\HelpSystem\Data\bin\Debug\banco.mdf
+C:\Users\jfirm\Documents\HelpSystem\Data\bin\Debug\banco_log.ldf
+C:\Users\jfirm\Documents\HelpSystem\Data\bin\Debug\Data.dll.config
+C:\Users\jfirm\Documents\HelpSystem\Data\bin\Debug\Data.dll
+C:\Users\jfirm\Documents\HelpSystem\Data\bin\Debug\Data.pdb
+C:\Users\jfirm\Documents\HelpSystem\Data\bin\Debug\EntityFramework.dll
+C:\Users\jfirm\Documents\HelpSystem\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jfirm\Documents\HelpSystem\Data\bin\Debug\EntityFramework.xml
+C:\Users\jfirm\Documents\HelpSystem\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jfirm\Documents\HelpSystem\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\jfirm\Documents\HelpSystem\Data\obj\Debug\Data.csproj.CopyComplete
+C:\Users\jfirm\Documents\HelpSystem\Data\obj\Debug\Data.dll
+C:\Users\jfirm\Documents\HelpSystem\Data\obj\Debug\Data.pdb
+C:\Users\jfirm\Documents\HelpSystem\Data\obj\Debug\Data.csprojAssemblyReference.cache

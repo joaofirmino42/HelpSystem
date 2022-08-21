@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Data.Entity.Usuario>
+
+
+<div class="table-responsive" style="margin-top:50px;">
+    <table class="table table-bordered table-light">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Ranking</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Nome</td>
+                    <td>@item.Email</td>
+                    <td>@item.Ranking</td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr colspan="@Model.Count()">
+                <td>
+                    Quantidade de Usuários : @Model.Count()
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+<script src="~/Scripts/HelpSystem/CadastroHelpSystem.js"></script>
